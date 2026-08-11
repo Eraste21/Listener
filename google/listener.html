@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Listener</title>
 
@@ -14,88 +12,122 @@
 </head>
 
 <body>
+
     <main class="extension">
-        <header class="extension__header">
-            <div class="extension__logo">
-                <svg
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                >
-                    <path
-                        d="M4 14v-2a8 8 0 0 1 16 0v2"
-                    />
 
-                    <path
-                        d="M18 19h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5a2 2 0 0 1-2 2Z"
-                    />
+        <!-- HEADER -->
+        <header class="extension-header">
 
-                    <path
-                        d="M6 19h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H4v5a2 2 0 0 0 2 2Z"
-                    />
+            <div class="logo">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
+
+                    <path d="M18 19h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5a2 2 0 0 1-2 2Z" />
+
+                    <path d="M6 19h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H4v5a2 2 0 0 0 2 2Z" />
                 </svg>
             </div>
 
-            <div>
+            <div class="header-content">
                 <h1>Listener</h1>
-                <p>Lecture audio de la page</p>
+                <p>Écoutez le contenu de la page</p>
             </div>
+
         </header>
 
-        <section class="extension__content">
+
+        <!-- CONTENU -->
+        <section class="content">
+
             <div class="status">
-                <span class="status__dot"></span>
-                <span id="statusText">Prêt à écouter</span>
+                <span class="status-dot"></span>
+                <span>Prêt à écouter</span>
             </div>
 
-            <button
-                id="listen"
-                class="listen-button"
-                type="button"
-                aria-pressed="false"
-            >
-                <span class="listen-button__icon">
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M4 14v-2a8 8 0 0 1 16 0v2"
-                        />
 
-                        <path
-                            d="M18 19h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5a2 2 0 0 1-2 2Z"
-                        />
+            <!-- BOUTON LISTEN -->
+            <button id="listen" class="listen-button" type="button">
 
-                        <path
-                            d="M6 19h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H4v5a2 2 0 0 0 2 2Z"
-                        />
+                <span class="button-icon">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
+
+                        <path d="M18 19h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5a2 2 0 0 1-2 2Z" />
+
+                        <path d="M6 19h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H4v5a2 2 0 0 0 2 2Z" />
                     </svg>
+
                 </span>
 
-                <span class="listen-button__text">
-                    <strong id="buttonTitle">Écouter le texte</strong>
-                    <small id="buttonDescription">
+
+                <span class="button-text">
+
+                    <strong>
+                        Écouter la page
+                    </strong>
+
+                    <small>
                         Démarrer la lecture audio
                     </small>
+
                 </span>
 
-                <span class="listen-button__arrow">
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path d="m9 18 6-6-6-6" />
-                    </svg>
-                </span>
+
+                <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+
             </button>
+
+
+            <!-- CONTROLES -->
+            <div class="controls">
+
+                <!-- PAUSE -->
+                <button id="pause" class="pause-button" type="button">
+
+                    <span class="pause-icon">
+                        <span></span>
+                        <span></span>
+                    </span>
+
+                    Pause
+
+                </button>
+
+
+                <!-- STOP -->
+                <button id="stop" class="stop-button" type="button">
+
+                    <span class="stop-icon"></span>
+
+                    Arrêter
+
+                </button>
+
+            </div>
+
         </section>
 
-        <footer class="extension__footer">
-            <span>Listener Extension</span>
-            <span class="version">v1.0</span>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <span>
+                Listener
+            </span>
+
+            <span class="version">
+                v1.0
+            </span>
+
         </footer>
+
     </main>
 
     <script src="listener.js"></script>
+
 </body>
+
 </html>
